@@ -38,7 +38,7 @@ const SearchBar = () => {
 
       setLoading(true);
       try {
-        const res = await axios.get(`http://localhost:3001/api/suggestions?prefix=${encodeURIComponent(trimmedQuery)}`);
+        const res = await axios.get(`api/suggestions?prefix=${encodeURIComponent(trimmedQuery)}`);
         setSuggestions(res.data);
         setError(null);
         setActiveSuggestion(-1);
