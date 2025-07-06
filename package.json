@@ -1,6 +1,6 @@
 {
   "name": "auto-suggestion",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build && cp -r dist ../backend/dist"
+    "build": "cd frontend && npm install && npm run build"
   }
 }
